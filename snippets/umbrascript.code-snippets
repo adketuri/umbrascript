@@ -1,0 +1,37 @@
+{
+  "change_party": {
+    "prefix": "change_party",
+    "body": "change_party(${1|add,remove|}, ${2|amalia,clydan,illari,esteri,reene,vades|})",
+    "description": "Changes the party members"
+  },
+  "change_variable": {
+    "prefix": "change_variable",
+    "body": "change_variable(${1:var_name}, ${2|true,false|})",
+    "description": "Set a variable to true or false"
+  },
+  "show_message": {
+    "prefix": "show_message",
+    "body": "show_message(\"${1:dialogue}\", ${2|amalia,clydan,Ghost Cou|})",
+    "description": "Display a dialogue message"
+  },
+  "teleport": {
+    "prefix": "teleport",
+    "body": "teleport(${1:map_name}, ${2:x}, ${3:y})",
+    "description": "Teleport to specified coordinates"
+  },
+  "create_npc": {
+    "prefix": "create_npc",
+    "body": "create_npc(${1|amalia,clydan,illari|}, ${2:tile_x}, ${3:tile_y})",
+    "description": "Creates a larger NPC (think primary characters)"
+  },
+  "create_small_npc": {
+    "prefix": "create_small_npc",
+    "body": "create_small_npc(${1:s_npc_01}, ${2:tile_x}, ${3:tile_y})",
+    "description": "Creates a smaller NPC (think rm2k3-style characters)"
+  },
+  "change_direction": {
+    "prefix": "change_direction",
+    "body": "change_direction(${1|amalia,clydan,illari|}, ${2|up,down,left,right|})",
+    "description": "Change a player's direction"
+  }
+}

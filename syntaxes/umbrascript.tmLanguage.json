@@ -1,0 +1,21 @@
+{
+	"scopeName": "source.umbrascript",
+	"patterns": [
+		{
+			"match": "\\b(change_party|change_variable|change_pose|create_small_npc|instance_set|change_direction|wait|fade_white|show_message|stop_bgm|shake|start_bgm|set_bgm|pan_to|move_to|set_collidable|move_by|destroy|look_at|block_input|set_skippable|teleport|create_npc|create_small_npc)\\b",
+			"name": "keyword.control.umbrascript"
+		},
+		{
+			"match": "#.*$",
+			"name": "comment.line.number-sign.umbrascript"
+		},
+		{
+			"match": ":\\w+",
+			"name": "entity.name.label.umbrascript"
+		},
+		{
+			"match": "\".*?\"",
+			"name": "string.quoted.double.umbrascript"
+		}
+	]
+}

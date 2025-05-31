@@ -1,0 +1,40 @@
+{
+  "name": "umbrascript",
+  "displayName": "umbrascript",
+  "description": "Starless Umbra game scripts",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "umbrascript",
+        "aliases": [
+          "Umbrascript",
+          "umbrascript"
+        ],
+        "extensions": [
+          ".txt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "umbrascript",
+        "scopeName": "source.umbrascript",
+        "path": "./syntaxes/umbrascript.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "umbrascript",
+        "path": "./snippets/umbrascript.code-snippets"
+      }
+    ]
+  }
+}

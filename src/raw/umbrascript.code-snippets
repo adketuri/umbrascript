@@ -1,0 +1,197 @@
+{
+  "change_party": {
+    "prefix": "change_party",
+    "body": "change_party(${1|add,remove|}, ${2|%PARTY_CHARACTER%|})",
+    "description": "Changes the party members"
+  },
+  "change_variable": {
+    "prefix": "change_variable",
+    "body": "change_variable(${1:var_name}, ${2|true,false|})",
+    "description": "Set a variable to true or false"
+  },
+  "set_invisible": {
+    "prefix": "set_invisible",
+    "body": "set_invisible(${1|%INSTANCE%|}, ${2|true,false|})",
+    "description": "Sets an instance's visibility'"
+  },
+  "set_visible": {
+    "prefix": "set_visible",
+    "body": "set_visible(${1|%INSTANCE%|}, ${2|true,false|})",
+    "description": "Apparently I needed this and set_invisible'"
+  },
+  "show_message": {
+    "prefix": "show_message",
+    "body": "show_message(\"${1:hello}\", ${2|%PARTY_CHARACTER%|})",
+    "description": "Display a dialogue message"
+  },
+  "chat": {
+    "prefix": "chat",
+    "body": "chat(\"${1:hello}\", ${2|%PARTY_CHARACTER%|})",
+    "description": "Display a chat message"
+  },
+  "teleport": {
+    "prefix": "teleport",
+    "body": "teleport(${1|%MAP_NAME%|}, ${2:x}, ${3:y})",
+    "description": "Teleport to specified coordinates"
+  },
+  "create_npc": {
+    "prefix": "create_npc",
+    "body": "create_npc(${1|%PARTY_CHARACTER%|}, ${2:tile_x}, ${3:tile_y})",
+    "description": "Creates a larger NPC (think primary characters)"
+  },
+  "create_small_npc": {
+    "prefix": "create_small_npc",
+    "body": "create_small_npc(${1|%INSTANCE%|}, ${2:tile_x}, ${3:tile_y})",
+    "description": "Creates a smaller NPC (think rm2k3-style characters)"
+  },
+  "change_direction": {
+    "prefix": "change_direction",
+    "body": "change_direction(${1|%INSTANCE%|}, ${2|up,down,left,right|})",
+    "description": "Change a player's direction"
+  },
+  "show_screen": {
+    "prefix": "show_screen",
+    "body": "show_screen(${1:1})",
+    "description": "Shows the screen over some time"
+  },
+  "hide_screen": {
+    "prefix": "hide_screen",
+    "body": "hide_screen(${1:1})",
+    "description": "Hides the screen over some time"
+  },
+  "wait": {
+    "prefix": "wait",
+    "body": "wait(${1:0.05})",
+    "description": "Waits for some time"
+  },
+  "jump": {
+    "prefix": "jump",
+    "body": "jump(${1|%INSTANCE%|}, ${2:20})",
+    "description": "Makes an instance jump some height"
+  },
+  "instance_set": {
+    "prefix": "instance_set",
+    "body": "instance_set(${1|%INSTANCE%|}, ${2|walk_speed_multiplier,lock_facing,disable_control,alpha|}, ${3|true,false, 2.0, 1.0, 0.75, 0.5|})",
+    "description": "Makes an instance jump some height"
+  },
+  "set_skippable": {
+    "prefix": "set_skippable",
+    "body": "set_skippable(${1|true,false|})",
+    "description": "Sets whether or not cutscenes are skippable when seen"
+  },
+  "set_collidable": {
+    "prefix": "set_collidable",
+    "body": "set_collidable(${1|%INSTANCE%|}, ${2|true, false|})",
+    "description": "Sets whether or not an instance will collide with other instances/tiles"
+  },
+  "change_pose": {
+    "prefix": "change_pose",
+    "body": "change_pose(${1|%INSTANCE%|}, ${2|walk,item,crouch,jump,land,attack,walk_combat,idle_combat,combat_start,push,dead,swim,wade,surface,climb|})",
+    "description": "Changes an instance's pose"
+  },
+  "fade_white": {
+    "prefix": "fade_white",
+    "body": "fade_white(${1|in,out|}, ${2|0.5,1,2|})",
+    "description": "Fades the screen white, in or out"
+  },
+  "stop_bgm": {
+    "prefix": "stop_bgm",
+    "body": "stop_bgm()",
+    "description": "Stops all bgm"
+  },
+  "start_bgm": {
+    "prefix": "start_bgm",
+    "body": "start_bgm(${2|%BGM%|}))",
+    "description": "Starts bgm"
+  },
+  "stop_ambience": {
+    "prefix": "stop_ambience",
+    "body": "stop_ambience()",
+    "description": "Stops all ambience"
+  },
+  "start_ambience": {
+    "prefix": "start_ambience",
+    "body": "start_ambience(${2|%AMB%|}))",
+    "description": "Starts ambience"
+  },
+  "sound": {
+    "prefix": "sound",
+    "body": "sound(${2|%SFX%|}))",
+    "description": "plays a sound"
+  },
+  "shake": {
+    "prefix": "shake",
+    "body": "shake(${1|2,3,4,5|}, ${2|0.1, 0.3, 0.5|})",
+    "description": "Shakes the screen"
+  },
+  "pan_to": {
+    "prefix": "pan_to",
+    "body": "pan_to(${1:x}, ${2:x}, ${3|1,2,3|})",
+    "description": "Pans the screen"
+  },
+  "look_at": {
+    "prefix": "look_at",
+    "body": "look_at(${1|%INSTANCE%|})",
+    "description": "Points the camera at an instance"
+  },
+  "move_to": {
+    "prefix": "move_to",
+    "body": "move_to(${1|%INSTANCE%|}, ${2:tile_x}, ${3:tile_y}, ${4|true,false|})",
+    "description": "Move to a specific tile coordinate"
+  },
+  "move_by": {
+    "prefix": "move_by",
+    "body": "move_by(${1|%INSTANCE%|}, ${2:tile_x}, ${3:tile_y}, ${4|true,false|})",
+    "description": "Move relative by some tile coordinates"
+  },
+  "create": {
+    "prefix": "create",
+    "body": "create(${1|%INSTANCE%|}), ${2:tile_x}, ${3:tile_y},",
+    "description": "Creates an instance"
+  },
+  "destroy": {
+    "prefix": "destroy",
+    "body": "destroy(${1|%INSTANCE%|})",
+    "description": "Destroys an instance"
+  },
+  "block_input": {
+    "prefix": "block_input",
+    "body": "block_input(${1|true,false|})",
+    "description": "Disables input for cutscenes"
+  },
+  "pause": {
+    "prefix": "pause",
+    "body": "pause()",
+    "description": "Debug execution pausing"
+  },
+  "change_layer": {
+    "prefix": "change_layer",
+    "body": "change_layer(${1|%INSTANCE%|}, ${2|Lower_Instances,Instances,Upper_Instances|})",
+    "description": "Changes an instance's layer"
+  },
+  "animation": {
+    "prefix": "animation",
+    "body": "animation(${1|%INSTANCE%|}, ${2|%SPRITE%|})",
+    "description": "Shows an animation"
+  },
+  "change_sprite": {
+    "prefix": "change_sprite",
+    "body": "change_sprite(${1|%INSTANCE%|}, ${2|%SPRITE%|}, ${3|%SPRITE%|})",
+    "description": "Changes an instance's sprite using some new mask"
+  },
+  "animation_replace": {
+    "prefix": "animation_replace",
+    "body": "animation_replace(${1|%INSTANCE%|}, ${2|%SPRITE%|}, ${3|loop,keep_last,destroy=inst|})",
+    "description": "Shows an animation, replacing an instance"
+  },
+  "animation_stop": {
+    "prefix": "animation_stop",
+    "body": "animation_stop(${1|%INSTANCE%|})",
+    "description": "Stops a replaced animation"
+  },
+  "wait_movement": {
+    "prefix": "wait_movement",
+    "body": "wait_movement()",
+    "description": "Waits until all instance's in-progress movements are complete"
+  }
+}

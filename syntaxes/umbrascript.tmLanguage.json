@@ -2,7 +2,7 @@
 	"scopeName": "source.umbrascript",
 	"patterns": [
 		{
-			"match": "\\b(change_party|change_variable|change_pose|create_small_npc|instance_set|change_direction|wait|fade_white|show_message|stop_bgm|shake|start_bgm|set_bgm|pan_to|move_to|set_collidable|move_by|destroy|look_at|block_input|set_skippable|teleport|create_npc|create_small_npc)\\b",
+			"match": "\\b(set_invisible|change_party|change_variable|change_pose|instance_set|change_direction|wait|fade_white|show_message|stop_bgm|shake|start_bgm|set_bgm|pan_to|move_to|set_collidable|move_by|destroy|look_at|block_input|set_skippable|teleport|create_npc|create_small_npc|show_screen|hide_screen|wait|jump|instance_set|sound|start_ambience|stop_ambience|pause|change_layer|animation|change_sprite|animation_stop|animation_replace|wait_movement|create|chat|set_visible)\\b",
 			"name": "keyword.control.umbrascript"
 		},
 		{

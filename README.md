@@ -1,5 +1,5 @@
 # umbrascript
 
-It's an extension for the light scripting language used for cutscenes in Starless Umbra. 
+A language extension for the light scripting language used in Starless Umbra's cutscenes. 
 
 Work-in-progress!👷‍♀️

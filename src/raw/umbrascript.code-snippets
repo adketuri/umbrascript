@@ -4,6 +4,11 @@
     "body": "change_party(${1|add,remove|}, ${2|%PARTY_CHARACTER%|})",
     "description": "Changes the party members"
   },
+  "change_inventory": {
+    "prefix": "change_inventory",
+    "body": "change_inventory(${1|add,remove|}, ${2|%ITEM%|})",
+    "description": "Changes the inventory"
+  },
   "change_variable": {
     "prefix": "change_variable",
     "body": "change_variable(${1:var_name}, ${2|true,false|})",
@@ -71,7 +76,7 @@
   },
   "instance_set": {
     "prefix": "instance_set",
-    "body": "instance_set(${1|%INSTANCE%|}, ${2|walk_speed_multiplier,lock_facing,disable_control,alpha|}, ${3|true,false, 2.0, 1.0, 0.75, 0.5|})",
+    "body": "instance_set(${1|%INSTANCE%|}, ${2|walk_speed_multiplier,lock_facing,disable_control,alpha|}, ${3|true,false,2.0,1.0,0.75,0.5|})",
     "description": "Makes an instance jump some height"
   },
   "set_skippable": {
@@ -81,7 +86,7 @@
   },
   "set_collidable": {
     "prefix": "set_collidable",
-    "body": "set_collidable(${1|%INSTANCE%|}, ${2|true, false|})",
+    "body": "set_collidable(${1|%INSTANCE%|}, ${2|true,false|})",
     "description": "Sets whether or not an instance will collide with other instances/tiles"
   },
   "change_pose": {
@@ -101,7 +106,7 @@
   },
   "start_bgm": {
     "prefix": "start_bgm",
-    "body": "start_bgm(${2|%BGM%|}))",
+    "body": "start_bgm(${2|%BGM%|})",
     "description": "Starts bgm"
   },
   "stop_ambience": {
@@ -111,12 +116,12 @@
   },
   "start_ambience": {
     "prefix": "start_ambience",
-    "body": "start_ambience(${2|%AMB%|}))",
+    "body": "start_ambience(${2|%AMB%|})",
     "description": "Starts ambience"
   },
   "sound": {
     "prefix": "sound",
-    "body": "sound(${2|%SFX%|}))",
+    "body": "sound(${2|%SFX%|})",
     "description": "plays a sound"
   },
   "shake": {
@@ -126,7 +131,7 @@
   },
   "pan_to": {
     "prefix": "pan_to",
-    "body": "pan_to(${1:x}, ${2:x}, ${3|1,2,3|})",
+    "body": "pan_to(${1:x}, ${2:y}, ${3|1,2,3|})",
     "description": "Pans the screen"
   },
   "look_at": {
@@ -193,5 +198,10 @@
     "prefix": "wait_movement",
     "body": "wait_movement()",
     "description": "Waits until all instance's in-progress movements are complete"
+  },
+  "recover": {
+    "prefix": "recover",
+    "body": "recover()",
+    "description": "Fully heals the party"
   }
 }

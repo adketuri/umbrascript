@@ -5,7 +5,7 @@ const { createInterface } = require("node:readline");
 console.log("Starting snippet generator");
 
 const base = "../starlessumbra/starlessumbra/";
-const partyChars = "amalia,illari,clydan,reene,esteri,vades,oskari";
+const partyChars = "amalia,illari,clydan,reene,esteri,vades,oskari,cou";
 
 let items;
 try {
